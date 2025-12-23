@@ -2,7 +2,7 @@ import { useState } from "react";
 import quests from "@/data/quests-scraped.json";
 import projects from "@/data/projects.json";
 import workbench from "@/data/workbench.json";
-import { Item, Project, Quest, WorkbenchUpgrade } from "@/types/data";
+import { Project, Quest, WorkbenchUpgrade } from "@/types/data";
 
 type ChecklistLink = { key: string; need: number; source: string };
 
