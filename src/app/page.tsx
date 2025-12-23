@@ -290,7 +290,7 @@ export default function Home() {
 
     return currentCategory.data
       .filter((entry) => {
-        const stages = (currentCategory.normalize as (arg: any) => NormalizedStage[])(entry);
+        const stages = (currentCategory.normalize as (arg: Quest | Project | WorkbenchUpgrade) => NormalizedStage[])(entry);
         return filterEntries(
           filter,
           entry,
@@ -299,7 +299,7 @@ export default function Home() {
         );
       })
       .map((entry) => {
-        const stages = (currentCategory.normalize as (arg: any) => NormalizedStage[])(entry);
+        const stages = (currentCategory.normalize as (arg: Quest | Project | WorkbenchUpgrade) => NormalizedStage[])(entry);
         const entryId = entry.id;
         const title = entry.name;
         const description = entry.description ?? (currentCategory.id === "quest" ? (entry as QuestRecord).objective ?? "" : "");
@@ -314,9 +314,9 @@ export default function Home() {
               ].filter(Boolean)
             : [];
 
-        const subtitle = (currentCategory.subtitle as (arg: any) => string)(entry);
+        const subtitle = (currentCategory.subtitle as (arg: Quest | Project | WorkbenchUpgrade) => string)(entry);
         const badge = currentCategory.headerBadge
-          ? (currentCategory.headerBadge as (arg: any) => string | undefined)(entry)
+          ? (currentCategory.headerBadge as (arg: Quest | Project | WorkbenchUpgrade) => string | undefined)(entry)
           : undefined;
 
         return (
@@ -407,12 +407,22 @@ export default function Home() {
           ) : (
             Object.values(checklist).map((ci) => {
               const pct = ci.total > 0 ? Math.min(100, Math.round((ci.have / ci.total) * 100)) : 0;
+              const sources = Array.from(new Set((ci.links ?? []).map((l) => l.source).filter(Boolean)));
               return (
                 <div key={ci.itemId} className={styles.checklistCard}>
                   <div className={styles.checklistTop}>
                     <div>
                       <p className={styles.cardEyebrow}>Item</p>
                       <h4>{ci.name}</h4>
+                      {sources.length ? (
+                        <div className={styles.metaRow}>
+                          {sources.map((src) => (
+                            <span key={src} className={styles.chip}>
+                              {src}
+                            </span>
+                          ))}
+                        </div>
+                      ) : null}
                     </div>
                     <button className={styles.ghostButton} type="button" onClick={() => removeChecklist(ci.itemId)}>
                       Remove
