@@ -37,28 +37,33 @@ const projectData = projectsManual as Project[];
 const workbenchData = workbenchScraped as WorkbenchUpgrade[];
 const itemData = itemsScraped as Item[];
 
-type AnyEntry = Quest | Project | WorkbenchUpgrade | RosterEntry;
-type AnyCategory = CategoryDefinition<AnyEntry>;
-
-const categories: AnyCategory[] = [
+const categories: Array<
+  CategoryDefinition<Quest> | CategoryDefinition<Project> | CategoryDefinition<WorkbenchUpgrade>
+> = [
   {
     id: "quest",
     label: "Quests",
     data: questData,
-    normalize: (entry: QuestRecord) => [
-      {
-        id: `${entry.id}-objective`,
-        name: entry.objective ?? entry.description ?? "Objective",
-        requirements: [],
-        reward: entry.reward,
-        stageLabel: entry.trader ? `Trader: ${entry.trader}` : "Quest",
-      },
-    ],
-    subtitle: (entry: QuestRecord) =>
-      [entry.trader ? `Trader: ${entry.trader}` : null, entry.requiredLocation ? `Location: ${entry.requiredLocation}` : null]
+    normalize: (entry: Quest) =>
+      (entry as QuestRecord).stages?.length
+        ? (entry as QuestRecord).stages
+        : [
+            {
+              id: `${(entry as QuestRecord).id}-objective`,
+              name: (entry as QuestRecord).objective ?? entry.description ?? "Objective",
+              requirements: [],
+              reward: (entry as QuestRecord).reward,
+              stageLabel: (entry as QuestRecord).trader ? `Trader: ${(entry as QuestRecord).trader}` : "Quest",
+            },
+          ],
+    subtitle: (entry: Quest) =>
+      [
+        (entry as QuestRecord).trader ? `Trader: ${(entry as QuestRecord).trader}` : null,
+        (entry as QuestRecord).requiredLocation ? `Location: ${(entry as QuestRecord).requiredLocation}` : null,
+      ]
         .filter(Boolean)
         .join(" • ") || "Quest chain",
-    headerBadge: (entry: QuestRecord) => (entry.reward ? "Reward" : undefined),
+    headerBadge: (entry: Quest) => ((entry as QuestRecord).reward ? "Reward" : undefined),
   },
   {
     id: "project",
@@ -282,18 +287,17 @@ export default function Home() {
     if (!currentCategory) return null;
 
     return currentCategory.data
-      .filter((entry) =>
-        filterEntries(
+      .filter((entry) => {
+        const stages = (currentCategory.normalize as (arg: any) => NormalizedStage[])(entry);
+        return filterEntries(
           filter,
           entry,
-          currentCategory
-            .normalize(entry)
-            .flatMap((stage) => stage.requirements),
+          stages.flatMap((stage) => stage.requirements),
           itemLookup,
-        ),
-      )
+        );
+      })
       .map((entry) => {
-        const stages = currentCategory.normalize(entry);
+        const stages = (currentCategory.normalize as (arg: any) => NormalizedStage[])(entry);
         const entryId = entry.id;
         const title = entry.name;
         const description = entry.description ?? (currentCategory.id === "quest" ? (entry as QuestRecord).objective ?? "" : "");
@@ -308,6 +312,11 @@ export default function Home() {
               ].filter(Boolean)
             : [];
 
+        const subtitle = (currentCategory.subtitle as (arg: any) => string)(entry);
+        const badge = currentCategory.headerBadge
+          ? (currentCategory.headerBadge as (arg: any) => string | undefined)(entry)
+          : undefined;
+
         return (
           <section key={entryId} className={styles.card}>
             {image ? (
@@ -317,7 +326,7 @@ export default function Home() {
             ) : null}
             <header className={styles.cardHeader}>
               <div>
-                <p className={styles.cardEyebrow}>{currentCategory.subtitle(entry)}</p>
+                <p className={styles.cardEyebrow}>{subtitle}</p>
                 <h3>{title}</h3>
                 <p className={styles.cardDescription}>{description}</p>
                 {questMeta.length ? (
@@ -330,9 +339,7 @@ export default function Home() {
                   </div>
                 ) : null}
               </div>
-              {currentCategory.headerBadge ? (
-                <span className={styles.badge}>{currentCategory.headerBadge(entry)}</span>
-              ) : null}
+              {badge ? <span className={styles.badge}>{badge}</span> : null}
             </header>
             {sourceUrl ? (
               <a className={styles.sourceLink} href={sourceUrl} target="_blank" rel="noreferrer">
