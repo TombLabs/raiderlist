@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-type ChecklistLink = { key: string; need: number };
+type ChecklistLink = { key: string; need: number; source: string };
 
 type ChecklistItem = {
   itemId: string;
@@ -35,10 +35,12 @@ export function useChecklist() {
     }
   };
 
-  const add = (itemId: string, name: string, quantity: number, key?: string) => {
+  const add = (itemId: string, name: string, quantity: number, key?: string, source?: string) => {
     const existing = items[itemId];
     const nextTotal = (existing?.total ?? 0) + quantity;
-    const links: ChecklistLink[] = key ? [...(existing?.links ?? []), { key, need: quantity }] : existing?.links ?? [];
+    const links: ChecklistLink[] = key
+      ? [...(existing?.links ?? []), { key, need: quantity, source: source ?? "Checklist" }]
+      : existing?.links ?? [];
     const next: ChecklistItem = {
       itemId,
       name,

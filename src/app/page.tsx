@@ -168,6 +168,7 @@ export default function Home() {
     entityId: string,
     stageId: string,
     req: Requirement,
+    sourceLabel: string,
   ) => {
     const item = itemLookup[req.itemId];
     const key = makeProgressKey(categoryId, entityId, stageId, req.itemId);
@@ -197,7 +198,7 @@ export default function Home() {
               disabled={remaining === 0 || alreadyAdded}
               onClick={() => {
                 if (remaining <= 0) return;
-                addToChecklist(req.itemId, item?.name ?? req.itemId, remaining, key);
+                addToChecklist(req.itemId, item?.name ?? req.itemId, remaining, key, sourceLabel);
               }}
             >
               {alreadyAdded
@@ -252,6 +253,7 @@ export default function Home() {
     categoryId: ProgressCategory,
     entityId: string,
     stage: NormalizedStage,
+    sourceLabel: string,
   ) => {
     const total = stage.requirements.reduce((sum, req) => sum + req.quantity, 0);
     const have = stage.requirements.reduce((sum, req) => {
@@ -276,7 +278,7 @@ export default function Home() {
           <span style={{ width: `${pct}%` }} />
         </div>
         <div className={styles.requirements}>
-          {stage.requirements.map((req) => renderRequirement(categoryId, entityId, stage.id, req))}
+          {stage.requirements.map((req) => renderRequirement(categoryId, entityId, stage.id, req, sourceLabel))}
         </div>
       </div>
     );
@@ -348,7 +350,7 @@ export default function Home() {
             ) : null}
             <div className={styles.stages}>
               {stages.length ? (
-                stages.map((s) => renderStage(currentCategory.id, entryId, s))
+                stages.map((s) => renderStage(currentCategory.id, entryId, s, `${currentCategory.label}: ${title}`))
               ) : (
                 <div className={styles.emptyStage}>No stage details provided.</div>
               )}
