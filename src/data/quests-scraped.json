@@ -1,0 +1,580 @@
+[
+  {
+    "id": "picking-up-the-pieces",
+    "name": "Picking Up The Pieces",
+    "trader": "Shani",
+    "requiredLocation": "Any",
+    "objective": "Visit any area on your map with a loot category icon Loot 3 containers",
+    "reward": "1x Rattler III 80x Medium Ammo",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/1/1e/Quest_Picking_Up_The_Pieces.png/400px-Quest_Picking_Up_The_Pieces.png.webp"
+  },
+  {
+    "id": "trash-into-treasure",
+    "name": "Trash Into Treasure",
+    "trader": "Shani",
+    "requiredLocation": "Any",
+    "objective": "Obtain 6 Wires Obtain 1 Battery",
+    "reward": "1x Tactical Mk. 1 3x Adrenaline Shot",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/7/79/Quest_Trash_Into_Treasure.png/400px-Quest_Trash_Into_Treasure.png.webp"
+  },
+  {
+    "id": "clearer-skies",
+    "name": "Clearer Skies",
+    "trader": "Shani",
+    "requiredLocation": "Any",
+    "objective": "Destroy 3 ARC enemies Get 3 ARC Alloy for Shani",
+    "reward": "Hiker Backpack (Black Color) 3x Sterilized Bandage 1x Light Shield",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/d/d8/Quest_Clearer_Skies.png/400px-Quest_Clearer_Skies.png.webp"
+  },
+  {
+    "id": "off-the-radar",
+    "name": "Off The Radar",
+    "trader": "Shani",
+    "requiredLocation": "Any",
+    "objective": "In One Round Visit a Field Depot Repair the antenna on the roof of the Field Depot",
+    "reward": "2x Defibrillator",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/1/12/Quest_Off_The_Radar.png/400px-Quest_Off_The_Radar.png.webp"
+  },
+  {
+    "id": "a-bad-feeling",
+    "name": "A Bad Feeling",
+    "trader": "Celeste",
+    "requiredLocation": "Any",
+    "objective": "Find and search any ARC Probe or ARC Courier",
+    "reward": "10x Metal Parts 5x Steel Spring 5x Duct Tape",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/d/de/Quest_A_Bad_Feeling.png/400px-Quest_A_Bad_Feeling.png.webp"
+  },
+  {
+    "id": "a-balanced-harvest",
+    "name": "A Balanced Harvest",
+    "trader": "Celeste",
+    "requiredLocation": "Dam Battlegrounds",
+    "objective": "In One Round Go to the Research & Administration building Locate Lab 1 on the upper floor above the reception Search for any traces of the agricultural research project",
+    "reward": "3x Advanced Mechanical Components 3x Medium Gun Parts 10x Steel Spring",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/2/29/Quest_A_Balanced_Harvest.png/400px-Quest_A_Balanced_Harvest.png.webp"
+  },
+  {
+    "id": "a-better-use",
+    "name": "A Better Use",
+    "trader": "Tian Wen",
+    "requiredLocation": "Any",
+    "objective": "Request in a Supply Drop from a Call Station Loot a Supply Drop",
+    "reward": "Extended Light Magazine I Compensator I Stable Stock I",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/7/7f/Quest_A_Better_Use.png/400px-Quest_A_Better_Use.png.webp"
+  },
+  {
+    "id": "a-lay-of-the-land",
+    "name": "A Lay Of The Land",
+    "trader": "Shani",
+    "requiredLocation": "Spaceport",
+    "objective": "In One Round Reach the Jiangsu Warehouse Find the shipping notes in the foreman's office Locate the scanners on the upper floor of Control Tower A6 Deliver 1 LiDAR Scanners to Shani",
+    "reward": "Dam Testing Annex Key 3x Zipline 2x Smoke Grenade",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/0/06/Quest_A_Lay_Of_The_Land.png/400px-Quest_A_Lay_Of_The_Land.png.webp"
+  },
+  {
+    "id": "a-reveal-in-ruins",
+    "name": "A Reveal in Ruins",
+    "trader": "Lance",
+    "requiredLocation": "Buried City",
+    "objective": "In One Round Search for an ESR Analyzer inside any pharmacy in Buried City Deliver the ESR Analyzer to Lance",
+    "reward": "Tactical Mk. 3 (Healing) 1x Surge Shield Recharger",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests"
+  },
+  {
+    "id": "a-symbol-of-unification",
+    "name": "A Symbol Of Unification",
+    "trader": "Celeste",
+    "requiredLocation": "Dam Battlegrounds",
+    "objective": "In One Round Reach the Formicai Outpost in Dam Battlegrounds Locate the flag at Formicai Outpost Hoist the flag on the small platform overlooking the Red Lake",
+    "reward": "Aviator Outfit (Dusted Cream Color) 3x Mod Components 5x Duct Tape",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/5/53/Quest_A_Symbol_Of_Unification.png/400px-Quest_A_Symbol_Of_Unification.png.webp"
+  },
+  {
+    "id": "a-warm-place-to-rest",
+    "name": "A Warm Place To Rest",
+    "trader": "Apollo",
+    "requiredLocation": "Buried City",
+    "objective": "Locate the Abandoned Highway Camp Search for any signs of survivors Follow the red markers Inspect the grave",
+    "reward": "Radio Renegade Outfit (Goggles Variant) 3x Noisemaker 5x Blue Light Stick 1x Rosary",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/0/02/Quest_A_Warm_Place_To_Rest.png/400px-Quest_A_Warm_Place_To_Rest.png.webp"
+  },
+  {
+    "id": "after-rain-comes",
+    "name": "After Rain Comes",
+    "trader": "Celeste",
+    "requiredLocation": "Buried City",
+    "objective": "Find the flooded solar panels nearby the Grandioso Apartments Repair the solar panels using 5 Wires and 2 Batteries",
+    "reward": "5x Blue Light Stick 3x Antiseptic 5x Durable Cloth",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/4/44/Quest_After_Rain_Comes.png/400px-Quest_After_Rain_Comes.png.webp"
+  },
+  {
+    "id": "back-on-top",
+    "name": "Back On Top",
+    "trader": "Tian Wen",
+    "requiredLocation": "Buried City, Spaceport, Dam Battlegrounds, The Blue Gate",
+    "objective": "On The Blue Gate, mark the white lookout tower south of the Warehouse Complex On Dam Battlegrounds, mark the Pattern House On Spaceport, mark the South Trench Tower On Buried City, mark the building with the mural in the Buried Properties",
+    "reward": "Renegade I Stable Stock III 80x Medium Ammo",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/5/51/Quest_Back_On_Top.png/400px-Quest_Back_On_Top.png.webp"
+  },
+  {
+    "id": "broken-monument",
+    "name": "Broken Monument",
+    "trader": "Tian Wen",
+    "requiredLocation": "Dam Battlegrounds",
+    "objective": "In One Round Reach the hallowed grounds by the Scrap Yard Search for a compass near the broken-down vehicles Search for the video tape near the cylindrical containers Search for the old field rations in the Raider camp Deliver the First Wave Tape to Tian Wen Deliver First Wave Compass to Tian Wen Deliver First Wave Rations to Tian Wen",
+    "reward": "Arpeggio I Compensator II 80x Medium Ammo",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/a/a8/Quest_Broken_Monument.png/400px-Quest_Broken_Monument.png.webp"
+  },
+  {
+    "id": "building-a-library",
+    "name": "Building A Library",
+    "trader": "Apollo",
+    "requiredLocation": "Buried City",
+    "objective": "In One Round Locate the Library in the City Center Find 1 romance book Find 1 detective book Find 1 adventure book",
+    "reward": "Buried City Town Hall Key",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/9/9b/Quest_Building_A_Library.png/400px-Quest_Building_A_Library.png.webp"
+  },
+  {
+    "id": "celeste-s-journals",
+    "name": "Celeste's Journals",
+    "trader": "Celeste",
+    "requiredLocation": "Dam Battlegrounds",
+    "objective": "In One Round Retrieve Celeste's Journals from the South Swamp Outpost Retrieve Celeste's Journals from the northern outpost overlooking the Red Lakes Deliver 2 Journals to Celeste",
+    "reward": "1x Magnetic Accelerator 3x Heavy Gun Parts 1x Exodus Modules",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/6/60/Quest_Celeste%27s_Journals.png/400px-Quest_Celeste%27s_Journals.png.webp"
+  },
+  {
+    "id": "communication-hideout",
+    "name": "Communication Hideout",
+    "trader": "Shani",
+    "requiredLocation": "Buried City",
+    "objective": "In One Round Reach the Red Tower in Old Town Find missing battery cell Install the battery cell in the Generator Enable the power on the Generator Boot the antenna terminal near the Red Tower",
+    "reward": "Aviator Outfit (Crimson Racer Color) Anvil III 40x Heavy Ammo",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/2/2e/Quest_Communication_Hideout.png/400px-Quest_Communication_Hideout.png.webp"
+  },
+  {
+    "id": "digging-up-dirt",
+    "name": "Digging Up Dirt",
+    "trader": "Celeste",
+    "requiredLocation": "Buried City",
+    "objective": "Locate the Santa Maria Houses in Old Town Locate the Dead Drop inside the courtyard",
+    "reward": "x2 Advanced Electrical Components x4 Speaker Component",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/3/3a/Quest_Digging_Up_Dirt.png/400px-Quest_Digging_Up_Dirt.png.webp"
+  },
+  {
+    "id": "doctor-s-orders",
+    "name": "Doctor's Orders",
+    "trader": "Lance",
+    "requiredLocation": "Any",
+    "objective": "Obtain 1 Syringe Obtain 2 Antiseptic Obtain 1 Durable Cloth Obtain 1 Great Mullein",
+    "reward": "3x Adrenaline Shot 3x Sterilized Bandage 1x Surge Shield Recharger",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/6/6d/Quest_Doctor%27s_Orders.png/400px-Quest_Doctor%27s_Orders.png.webp"
+  },
+  {
+    "id": "down-to-earth",
+    "name": "Down To Earth",
+    "trader": "Shani",
+    "requiredLocation": "Any",
+    "objective": "In One Round Visit a Field Depot Deliver a Field Crate to a Supply Station Collect the reward",
+    "reward": "Combat Mk. 1 Medium Shield",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/f/fc/Quest_Down_To_Earth.png/400px-Quest_Down_To_Earth.png.webp"
+  },
+  {
+    "id": "echoes-of-victory-ridge",
+    "name": "Echoes Of Victory Ridge",
+    "trader": "Celeste",
+    "requiredLocation": "Dam Battlegrounds",
+    "objective": "In One Round Reach Victory Ridge Retrieve the battle plans from the hideout under the broken highway Deliver Major Aiva's Patch to Celeste",
+    "reward": "6x Crude Explosives 2x Processor 1x Music Box",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/0/01/Quest_Echoes_Of_Victory_Ridge.png/400px-Quest_Echoes_Of_Victory_Ridge.png.webp"
+  },
+  {
+    "id": "eyes-on-the-prize",
+    "name": "Eyes On The Prize",
+    "trader": "Tian Wen",
+    "requiredLocation": "Buried City",
+    "objective": "Find the secluded roof terrace south-west of the Southern Station, look for blue tarps. Rewire the solar panel using 3 Wires",
+    "reward": "1x Extended Shotgun Mag II 1x Extended Medium Mag II",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/5/56/Quest_Eyes_On_The_Prize.png/400px-Quest_Eyes_On_The_Prize.png.webp"
+  },
+  {
+    "id": "flickering-threat",
+    "name": "Flickering Threat",
+    "trader": "Celeste",
+    "requiredLocation": "Dam Battlegrounds",
+    "objective": "Enter the Power Generation Complex by The Dam Find the Generator Room Repair the Generator Find the Ventilation Shaft Enable the power via the power switch underneath the stairs",
+    "reward": "Radio Renegade Outfit (Helmet Variant) 5x Medium Gun Parts 3x Advanced Mechanical Components",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/9/9b/Quest_Flickering_Threat.png/400px-Quest_Flickering_Threat.png.webp"
+  },
+  {
+    "id": "greasing-her-palms",
+    "name": "Greasing Her Palms",
+    "trader": "Celeste",
+    "requiredLocation": "Spaceport, Dam Battlegrounds, Buried City",
+    "objective": "On Spaceport, scope out the rocket thrusters outside the Rocket Assembly On Dam Battlegrounds, visit the Locked Room in the Water Treatment Control building On Buried City, visit the barricaded area on floor 6 of the Space Travel Building",
+    "reward": "Lure Grenade Blueprint Speaker Component Electrical Components",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/b/bf/Quest_Greasing_Her_Palms.png/400px-Quest_Greasing_Her_Palms.png.webp"
+  },
+  {
+    "id": "hatch-repairs",
+    "name": "Hatch Repairs",
+    "trader": "Shani",
+    "requiredLocation": "Any",
+    "objective": "Repair the leaking hydraulic pipes near a Raider Hatch Search for a Hatch Key near the Raider Hatch",
+    "reward": "1x Raider Hatch Key 1x Binoculars",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/c/cd/Quest_Hatch_Repairs.png/400px-Quest_Hatch_Repairs.png.webp"
+  },
+  {
+    "id": "industrial-espionage",
+    "name": "Industrial Espionage",
+    "trader": "Tian Wen",
+    "requiredLocation": "Buried City",
+    "objective": "Find Tian Wen's weapon cache near the Gas Station in the Outskirts Deliver the Burletta to the rival weapon cache Plant a bug on the weapon cache",
+    "reward": "Burletta Blueprint 3x Mechanical Components 3x Simple Gun Parts",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/8/8c/Quest_Industrial_Espionage.png/400px-Quest_Industrial_Espionage.png.webp"
+  },
+  {
+    "id": "keeping-the-memory",
+    "name": "Keeping The Memory",
+    "trader": "Celeste",
+    "requiredLocation": "Dam Battlegrounds",
+    "objective": "In One Round Reach the wreckage in the Formicai Hills Search for the missing helmet Return the helmet to the memorial",
+    "reward": "5x Simple Gun Parts 5x Duct Tape 5x Magnet",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/2/22/Quest_Keeping_The_Memory.png/400px-Quest_Keeping_The_Memory.png.webp"
+  },
+  {
+    "id": "lost-in-transmission",
+    "name": "Lost In Transmission",
+    "trader": "Shani",
+    "requiredLocation": "Spaceport",
+    "objective": "In One Round Visit Control Tower A6 Reach the top of Control Tower A6 Establish a connection from the terminal",
+    "reward": "Snap Hook",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/d/d2/Quest_Lost_In_Transmission.png/400px-Quest_Lost_In_Transmission.png.webp"
+  },
+  {
+    "id": "marked-for-death",
+    "name": "Marked For Death",
+    "trader": "Tian Wen",
+    "requiredLocation": "Buried City",
+    "objective": "Reach the Su Durante Warehouses in the Outskirts in Buried City Search for Tian Wen's cache near the Warehouses Follow the clues",
+    "reward": "Shotgun Choke II Angled Grip II",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/9/92/Quest_Marked_For_Death.png/400px-Quest_Marked_For_Death.png.webp"
+  },
+  {
+    "id": "medical-merchandise",
+    "name": "Medical Merchandise",
+    "trader": "Lance",
+    "requiredLocation": "Spaceport, Buried City, Dam Battlegrounds",
+    "objective": "On Spaceport, search 2 containers in the Departure Building's exam rooms Search 3 containers in the Hospital in Buried City On Dam Battlegrounds, search 2 containers in the Research & Administration building's medical room",
+    "reward": "Backpack Charm (Banana) 3x Defibrillator 2x Vita Shot",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/6/64/Quest_Medical_Merchandise.png/400px-Quest_Medical_Merchandise.png.webp"
+  },
+  {
+    "id": "mixed-signals",
+    "name": "Mixed Signals",
+    "trader": "Shani",
+    "requiredLocation": "Any",
+    "objective": "Destroy an ARC Surveyor Obtain 1 Surveyor Vault",
+    "reward": "Photoelectric Cloak Raider Hatch Key",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/a/ae/Quest_Mixed_Signals.png/400px-Quest_Mixed_Signals.png.webp"
+  },
+  {
+    "id": "our-presence-up-there",
+    "name": "Our Presence Up There",
+    "trader": "Shani",
+    "requiredLocation": "Dam Battlegrounds",
+    "objective": "In One Round Visit the Pattern House in The Dam Find and flip the power switch Complete the antenna installation on the roof",
+    "reward": "Buried City Town Hall Key Raider Hatch Key 3x Jolt Mine",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/5/50/Quest_Our_Presence_Up_There.png/400px-Quest_Our_Presence_Up_There.png.webp"
+  },
+  {
+    "id": "out-of-the-shadows",
+    "name": "Out Of The Shadows",
+    "trader": "Shani",
+    "requiredLocation": "Any",
+    "objective": "Destroy a Rocketeer Obtain a Rocketeer Driver",
+    "reward": "3x Surge Shield Recharger 2x Wolfpack",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/6/63/Quest_Out_Of_The_Shadows.png/400px-Quest_Out_Of_The_Shadows.png.webp"
+  },
+  {
+    "id": "prescriptions-of-the-past",
+    "name": "Prescriptions Of The Past",
+    "trader": "Lance",
+    "requiredLocation": "Spaceport",
+    "objective": "In One Round Visit the Departure Building in Spaceport Find the Medical Exam Room inside the Departure Building Search for the records",
+    "reward": "Heavy Shield Tactical Mk. 3 (Healing) 3x Adrenaline Shot",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/2/22/Quest_Prescriptions_Of_The_Past.png/400px-Quest_Prescriptions_Of_The_Past.png.webp"
+  },
+  {
+    "id": "safe-passage",
+    "name": "Safe Passage",
+    "trader": "Apollo",
+    "requiredLocation": "Any",
+    "objective": "Destroy 2 ARC enemies using any explosive grenade",
+    "reward": "5x Li'l Smoke Grenade 3x Shrapnel Grenade 3x Barricade Kit",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/d/d9/Quest_Safe_Passage.png/400px-Quest_Safe_Passage.png.webp"
+  },
+  {
+    "id": "source-of-the-contamination",
+    "name": "Source Of The Contamination",
+    "trader": "Celeste",
+    "requiredLocation": "Dam Battlegrounds",
+    "objective": "Reach the Water Treatment Building in The Dam Search for the Flood Spill Intake near the Swamp Investigate any suspicious objects",
+    "reward": "5x Steel Spring 5x Duct Tape 1x Mod Components",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/1/16/Quest_Source_Of_The_Contamination.png/400px-Quest_Source_Of_The_Contamination.png.webp"
+  },
+  {
+    "id": "sparks-fly",
+    "name": "Sparks Fly",
+    "trader": "Apollo",
+    "requiredLocation": "Any",
+    "objective": "Destroy a Hornet with a Trigger 'Nade or Snap Blast Grenade",
+    "reward": "4x Crude Explosives 2x Processor Trigger 'Nade Blueprint",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/6/60/Quest_Sparks_Fly.png/400px-Quest_Sparks_Fly.png.webp"
+  },
+  {
+    "id": "straight-record",
+    "name": "Straight Record",
+    "trader": "Celeste",
+    "requiredLocation": "Dam Battlegrounds",
+    "objective": "Reach Victory Ridge Find the old EMP trap Disable the first power switch Disable the second power switch Disable the third power switch Shut down the EMP trap",
+    "reward": "5x Medium Gun Parts 3x Advanced Mechanical Components",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/6/68/Quest_Straight_Record.png/400px-Quest_Straight_Record.png.webp"
+  },
+  {
+    "id": "switching-the-supply",
+    "name": "Switching The Supply",
+    "trader": "Celeste",
+    "requiredLocation": "Spaceport",
+    "objective": "In One Round Find the tunnels under the Spaceport Find and turn the valve in the tunnels under Spaceport",
+    "reward": "Radio Renegade Outfit (Blue Color) Spaceport Trench Tower Key 3x Synthesized Fuel",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/4/4d/Quest_Switching_The_Supply.png/400px-Quest_Switching_The_Supply.png.webp"
+  },
+  {
+    "id": "the-right-tool",
+    "name": "The Right Tool",
+    "trader": "Tian Wen",
+    "requiredLocation": "Any",
+    "objective": "Destroy a Fireball Destroy a Hornet Destroy a Turret",
+    "reward": "Cheer Emote 1x Stitcher II 1x Extended Light Mag I",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/e/e4/Quest_The_Right_Tool.png/400px-Quest_The_Right_Tool.png.webp"
+  },
+  {
+    "id": "the-root-of-the-matter",
+    "name": "The Root Of The Matter",
+    "trader": "Celeste",
+    "requiredLocation": "Buried City",
+    "objective": "In One Round Go to the Research Building Search for the seed vault in the \"room with a great view\" Deliver the Experimental Seed Sample to Celeste",
+    "reward": "Backpack Charm (Succulent) 1,000.mw-parser-output .template-price{display:flex;gap:1px;align-items:center;width:min-content}",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/2/2d/Quest_The_Root_Of_The_Matter.png/400px-Quest_The_Root_Of_The_Matter.png.webp"
+  },
+  {
+    "id": "the-major-s-footlocker",
+    "name": "The Major's Footlocker",
+    "trader": "Tian Wen",
+    "requiredLocation": "Dam Battlegrounds",
+    "objective": "In One Round Search for Major Aiva's mementos in the apartments northwest of The Dam Deliver Major Aiva's Mementos to Tian Wen",
+    "reward": "Hullcracker Blueprint",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/2/24/Quest_The_Major%27s_Footlocker.png/400px-Quest_The_Major%27s_Footlocker.png.webp"
+  },
+  {
+    "id": "the-trifecta",
+    "name": "The Trifecta",
+    "trader": "Shani",
+    "requiredLocation": "Any",
+    "objective": "Destroy a Wasp Get a Wasp Driver for Shani Destroy a Hornet Get a Hornet Driver for Shani Destroy a Snitch Get a Snitch Scanner for Shani",
+    "reward": "Origin Outfit (Orange Camo Color) 1x Raider Hatch Key 2x Defibrillator 1x Dam Control Tower Key",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/7/79/Quest_The_Trifecta.png/400px-Quest_The_Trifecta.png.webp"
+  },
+  {
+    "id": "tribute-to-toledo",
+    "name": "Tribute to Toledo",
+    "trader": "Celeste",
+    "requiredLocation": "Any",
+    "objective": "Get a Power Rod for Celeste",
+    "reward": "Dam Staff Room Key",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests"
+  },
+  {
+    "id": "unexpected-initiative",
+    "name": "Unexpected Initiative",
+    "trader": "Tian Wen",
+    "requiredLocation": "Buried City",
+    "objective": "In One Round Reach the Grandioso Apartments in Buried City Search for Fertilizer on the rooftop of the Grandioso Apartments Reach Piazza Roma in Buried City Search for a Water Pump in the broken rooftop gardens at Piazza Roma Deliver a Water Pump to Tian Wen Deliver Fertilizer to Tian Wen",
+    "reward": "Il Toro I 40x Shotgun Ammo Shotgun Choke II",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/8/82/Quest_Unexpected_Initiative.png/400px-Quest_Unexpected_Initiative.png.webp"
+  },
+  {
+    "id": "untended-garden",
+    "name": "Untended Garden",
+    "trader": "Celeste",
+    "requiredLocation": "Dam Battlegrounds",
+    "objective": "In One Round Go to the Hydroponic Dome Complex Access the data archive in one of the domes Upload the data to the computer terminal in any Field Depot",
+    "reward": "3x Advanced Mechanical Components 3x Heavy Gun Parts 5x Canister",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/c/cf/Quest_Untended_Garden.png/400px-Quest_Untended_Garden.png.webp"
+  },
+  {
+    "id": "water-troubles",
+    "name": "Water Troubles",
+    "trader": "Celeste",
+    "requiredLocation": "Dam Battlegrounds",
+    "objective": "In One Round Locate the Flood Access Tunnel under the Red Lake Balcony Find the intake to the District's Water Supply",
+    "reward": "3x Mechanical Components 3x Simple Gun Parts 3x Steel Spring",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/2/20/Quest_Water_Troubles.png/400px-Quest_Water_Troubles.png.webp"
+  },
+  {
+    "id": "what-goes-around",
+    "name": "What Goes Around",
+    "trader": "Apollo",
+    "requiredLocation": "Any",
+    "objective": "Destroy any ARC using a Fireball Burner",
+    "reward": "Backpack Attachment (Cans) 3x Blaze Grenade 2x Noisemaker",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/9/97/Quest_What_Goes_Around.png/400px-Quest_What_Goes_Around.png.webp"
+  },
+  {
+    "id": "what-we-left-behind",
+    "name": "What We Left Behind",
+    "trader": "Tian Wen",
+    "requiredLocation": "Buried City, Dam Battlegrounds, Spaceport",
+    "objective": "On Buried City, search 2 containers in the Raider Camp beneath the Parking Garage On Dam Battlegrounds, search for anything significant in the South Swamp Outpost On Spaceport, search for anything significant in Bilguun's Hideout, next to the Container Storage",
+    "reward": "Muzzle Brake II Vertical Grip II Stable Stock II",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/4/49/Quest_What_We_Left_Behind.png/400px-Quest_What_We_Left_Behind.png.webp"
+  },
+  {
+    "id": "paving-the-way",
+    "name": "Paving The Way",
+    "trader": "Apollo",
+    "requiredLocation": "Dam Battlegrounds, Blue Gate, Buried City",
+    "objective": "Go to any ENELICA building Search for a notice board with a note from the researcher On Buried City, reach the top floor above the Convinio in Piazza Roma Find the researcher's flat and search for any research data",
+    "reward": "1x Raider Hatch Key 3x Seeker Grenade 1x Advanced Electrical Components",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/b/b0/Quest_Paving_The_Way.png/400px-Quest_Paving_The_Way.png.webp"
+  },
+  {
+    "id": "deciphering-the-data",
+    "name": "Deciphering The Data",
+    "trader": "Shani",
+    "requiredLocation": "Spaceport",
+    "objective": "Use the Magnetic Decryptor in the Fuel Control Building Reach the Arrival Building in Spaceport Use the Magnetic Decryptor on the top floor of the Arrival Building",
+    "reward": "3x Defibrillator 3x Trailblazer",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/2/22/Quest_Deciphering_The_Data.png/400px-Quest_Deciphering_The_Data.png.webp"
+  },
+  {
+    "id": "groundbreaking",
+    "name": "Groundbreaking",
+    "trader": "Apollo",
+    "requiredLocation": "Blue Gate",
+    "objective": "Enter the locked room at Pilgrim's Peak Search the room for any construction research Find the building pictured on the whiteboard Photograph the abounded housing project",
+    "reward": "Warden Outfit (Tangerine Color) 1x Power Rod",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/f/f5/Quest_Groundbreaking.png/400px-Quest_Groundbreaking.png.webp"
+  },
+  {
+    "id": "a-toxic-trail",
+    "name": "A Toxic Trail",
+    "trader": "Shani",
+    "requiredLocation": "Dam Battlegrounds",
+    "objective": "Return to the water intake below the Water Treatment Control building Search the swamp for traces of the barrel's origins Take a photo of the barrel truck Search the trunk for clues about the saboteur's identity",
+    "reward": "1x Tactical Mk. 2 3x Zipline 3x Pulse Mine 3x Gas Mine",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/9/9a/Quest_A_Toxic_Trail.png/400px-Quest_A_Toxic_Trail.png.webp"
+  },
+  {
+    "id": "the-stench-of-corruption",
+    "name": "The Stench Of Corruption",
+    "trader": "Shani",
+    "requiredLocation": "Spaceport",
+    "objective": "In One Round Reach the southwest lobby of the Departure Building Find the staff locker room Search the room for any clues of the saboteur's identity Reach the tunnels below the Spaceport Use the key on any Flushing Terminal to override the bypass protocol",
+    "reward": "Warden Outfit (Blue Color) 1x Air Freshener 1x Dam Staff Room Key 3x Noisemaker",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/2/2d/Quest_The_Stench_Of_Corruption.png/400px-Quest_The_Stench_Of_Corruption.png.webp"
+  },
+  {
+    "id": "the-clean-dream",
+    "name": "The Clean Dream",
+    "trader": "Apollo",
+    "requiredLocation": "Spaceport, Blue Gate",
+    "objective": "On spaceport, search 4 containers in the underground tunnels Find and monitor any Filtration System in the tunnels On The Blue Gate, visit the Maintenance Bunker Monitor the Purification System in the bunker Find and photograph the blueprints in the bunker",
+    "reward": "1x Deadline 3x Showstopper 3x Heavy Fuze Grenade",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/4/42/Quest_The_Clean_Dream.png/400px-Quest_The_Clean_Dream.png.webp"
+  },
+  {
+    "id": "a-first-foothold",
+    "name": "A First Foothold",
+    "trader": "Apollo",
+    "requiredLocation": "The Blue Gate",
+    "objective": "Nail down the roof plates on the Raider structure near Trapper's Glade Stabilize the observation deck near the Ridgeline Enable the comms terminal near the Olive Grove Rotate the satellite dishes on the church roof, north of the Data Vault",
+    "reward": "3x Shrapnel Grenade 3x Snap Blast Grenade 3x Heavy Fuze Grenade",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/5/5a/Quest_A_First_Foothold.png/400px-Quest_A_First_Foothold.png.webp"
+  },
+  {
+    "id": "reduced-to-rubble",
+    "name": "Reduced To Rubble",
+    "trader": "Shani",
+    "requiredLocation": "The Blue Gate",
+    "objective": "Take a photo of the collapsed Highway Go to the Broken Earth Follow the trail of destruction though the Broken Earth Investigate the unknown ARC machines",
+    "reward": "1x Zipline 3x Barricade Kit 3x Door Blocker",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/f/ff/Quest_Reduced_To_Rubble.png/400px-Quest_Reduced_To_Rubble.png.webp"
+  },
+  {
+    "id": "with-a-trace",
+    "name": "With A Trace",
+    "trader": "Shani",
+    "requiredLocation": "The Blue Gate",
+    "objective": "Reach the Barren Clearing Find signs of who brought down the ARC machines Inspect the Adorned Wreckage Inspect the communications device",
+    "reward": "1x Looting Mk. 2 1x Medium Shield",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Quests",
+    "image": "https://arcraiders.wiki/w/images/thumb/b/bb/Quest_Without_A_Trace.png/400px-Quest_Without_A_Trace.png.webp"
+  }
+]

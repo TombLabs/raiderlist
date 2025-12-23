@@ -1,0 +1,25 @@
+[
+  {
+    "id": "workbench-l1",
+    "name": "Workbench Stabilization",
+    "level": 1,
+    "description": "Stabilize the bench for safer mod installs.",
+    "benefit": "+1 mod slot for basic weapons",
+    "requirements": [
+      { "itemId": "scrap-metal", "quantity": 10 },
+      { "itemId": "servo-motor", "quantity": 1 }
+    ]
+  },
+  {
+    "id": "workbench-l2",
+    "name": "Calibration Suite",
+    "level": 2,
+    "description": "Upgrade calibration tools for exotic parts.",
+    "benefit": "Unlocks rare mod crafting",
+    "requirements": [
+      { "itemId": "servo-motor", "quantity": 3 },
+      { "itemId": "circuit-board", "quantity": 5 }
+    ]
+  }
+]
+

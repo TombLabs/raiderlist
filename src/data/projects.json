@@ -1,0 +1,131 @@
+[
+  {
+    "id": "flickering-flames-1",
+    "name": "Flickering Flames-1",
+    "description": "Community candleberry drive to prepare Speranza. Five contribution stages.",
+    "unlocks": "Event rewards and Snowglobe Charm on completion.",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Flickering_Flames-1",
+    "stages": [
+      {
+        "id": "candlelight-1",
+        "name": "Candlelight (1/5)",
+        "requirements": [
+          { "itemId": "empty-wine-bottle", "quantity": 1 },
+          { "itemId": "plastic-parts", "quantity": 25 },
+          { "itemId": "durable-cloth", "quantity": 5 },
+          { "itemId": "candleberries", "quantity": 20 }
+        ],
+        "reward": "5x Firecracker, 2000x Merit, 50x Raider Tokens"
+      },
+      {
+        "id": "decorations-2",
+        "name": "Decorations (2/5)",
+        "requirements": [
+          { "itemId": "candle-holder", "quantity": 3 },
+          { "itemId": "light-bulb", "quantity": 3 },
+          { "itemId": "industrial-battery", "quantity": 1 },
+          { "itemId": "candleberries", "quantity": 50 }
+        ],
+        "reward": "Red Light Stick Blueprint, 2000x Merit, 50x Raider Tokens"
+      },
+      {
+        "id": "presents-3",
+        "name": "Presents (3/5)",
+        "requirements": [
+          { "itemId": "snap-blast-grenade", "quantity": 5 },
+          { "itemId": "duct-tape", "quantity": 10 },
+          { "itemId": "film-reel", "quantity": 1 },
+          { "itemId": "candleberries", "quantity": 60 }
+        ],
+        "reward": "3x Trailblazer, 2000x Merit, 50x Raider Tokens"
+      },
+      {
+        "id": "beverages-4",
+        "name": "Beverages (4/5)",
+        "requirements": [
+          { "itemId": "coffee-pot", "quantity": 2 },
+          { "itemId": "fireball-burner", "quantity": 10 },
+          { "itemId": "water-filter", "quantity": 2 },
+          { "itemId": "candleberries", "quantity": 60 }
+        ],
+        "reward": "1x Vita Spray, 2000x Merit, 50x Raider Tokens"
+      },
+      {
+        "id": "meals-5",
+        "name": "Meals (5/5)",
+        "requirements": [
+          { "itemId": "mushroom", "quantity": 7 },
+          { "itemId": "frying-pan", "quantity": 2 },
+          { "itemId": "music-album", "quantity": 2 },
+          { "itemId": "candleberries", "quantity": 70 }
+        ],
+        "reward": "Snowglobe Charm, Bettina III, Extended Barrel, Kinetic Converter"
+      }
+    ]
+  },
+  {
+    "id": "expedition-2",
+    "name": "Expedition-2",
+    "description": "Construct a caravan to send your Raider beyond the Rust Belt.",
+    "unlocks": "Permanent departure rewards and skill points for the next Raider.",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Expedition-2",
+    "stages": [
+      {
+        "id": "foundation-1",
+        "name": "Foundation (1/6)",
+        "requirements": [
+          { "itemId": "metal-parts", "quantity": 150 },
+          { "itemId": "rubber-parts", "quantity": 200 },
+          { "itemId": "arc-alloy", "quantity": 80 },
+          { "itemId": "steel-spring", "quantity": 15 }
+        ],
+        "reward": "Foundation built"
+      },
+      {
+        "id": "core-systems-2",
+        "name": "Core Systems (2/6)",
+        "requirements": [
+          { "itemId": "durable-cloth", "quantity": 35 },
+          { "itemId": "wires", "quantity": 25 },
+          { "itemId": "electrical-components", "quantity": 20 },
+          { "itemId": "cooling-coil", "quantity": 4 }
+        ],
+        "reward": "Core systems installed"
+      },
+      {
+        "id": "framework-3",
+        "name": "Framework (3/6)",
+        "requirements": [
+          { "itemId": "light-bulb", "quantity": 4 },
+          { "itemId": "battery", "quantity": 30 },
+          { "itemId": "shredder-gyro", "quantity": 10 },
+          { "itemId": "exodus-modules", "quantity": 1 }
+        ],
+        "reward": "Framework completed"
+      },
+      {
+        "id": "outfitting-4",
+        "name": "Outfitting (4/6)",
+        "requirements": [
+          { "itemId": "frequency-modulation-box", "quantity": 5 },
+          { "itemId": "advanced-electrical-components", "quantity": 5 },
+          { "itemId": "ion-sputter", "quantity": 3 },
+          { "itemId": "leaper-pulse-unit", "quantity": 3 }
+        ],
+        "reward": "Outfitting complete"
+      },
+      {
+        "id": "load-stage-5",
+        "name": "Load Stage (5/6)",
+        "requirements": [],
+        "reward": "Load supplies"
+      },
+      {
+        "id": "departure-6",
+        "name": "Departure (6/6)",
+        "requirements": [],
+        "reward": "Ready to depart"
+      }
+    ]
+  }
+]

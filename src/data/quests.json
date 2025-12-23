@@ -1,0 +1,55 @@
+[
+  {
+    "id": "unexpected-initiative",
+    "name": "Unexpected Initiative",
+    "description": "Track down the source of bunker interference and deliver clean data back to Speranza.",
+    "faction": "Speranza Board",
+    "stages": [
+      {
+        "id": "reboot-anchors",
+        "name": "Reset the uplink anchors",
+        "requirements": [
+          { "itemId": "circuit-board", "quantity": 4 },
+          { "itemId": "scrap-metal", "quantity": 8 }
+        ],
+        "reward": "Scrip, reputation"
+      },
+      {
+        "id": "recover-cache",
+        "name": "Recover encrypted caches",
+        "requirements": [
+          { "itemId": "encrypted-cache", "quantity": 3 },
+          { "itemId": "circuit-board", "quantity": 2 }
+        ],
+        "reward": "Story progression"
+      }
+    ]
+  },
+  {
+    "id": "flickering-flames",
+    "name": "Flickering Flames",
+    "description": "Stabilize heaters for Speranza during the winter event.",
+    "faction": "Community Board",
+    "stages": [
+      {
+        "id": "heat-sinks",
+        "name": "Refit heat sinks",
+        "requirements": [
+          { "itemId": "frozen-coolant", "quantity": 2 },
+          { "itemId": "scrap-metal", "quantity": 6 }
+        ],
+        "reward": "Warmth tokens"
+      },
+      {
+        "id": "power-loops",
+        "name": "Secure power loops",
+        "requirements": [
+          { "itemId": "circuit-board", "quantity": 3 },
+          { "itemId": "servo-motor", "quantity": 1 }
+        ],
+        "reward": "Event credits"
+      }
+    ]
+  }
+]
+

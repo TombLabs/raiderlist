@@ -1,0 +1,123 @@
+[
+  {
+    "id": "scrap-metal",
+    "name": "Scrap Metal",
+    "type": "resource",
+    "rarity": "common",
+    "description": "Common salvage for early quests and basic bench upgrades.",
+    "locations": [
+      {
+        "map": "Dam Battlegrounds",
+        "area": "Maintenance Yards",
+        "spots": [
+          "Lootable crates near the generator stacks",
+          "Derailed cargo pods along the rail spur"
+        ],
+        "notes": "Break down rusted containers and patrol drops.",
+        "sourceUrl": "https://arcraiders.wiki/"
+      },
+      {
+        "map": "Buried City",
+        "area": "Collapsed Avenue",
+        "spots": [
+          "Scrap piles beside broken storefronts",
+          "Utility alleys behind the plaza"
+        ],
+        "sourceUrl": "https://arcraiders.wiki/"
+      }
+    ]
+  },
+  {
+    "id": "circuit-board",
+    "name": "Circuit Board",
+    "type": "resource",
+    "rarity": "uncommon",
+    "description": "Electronics salvage used in project builds and signal gear.",
+    "locations": [
+      {
+        "map": "The Spaceport",
+        "area": "Control Terminals",
+        "spots": [
+          "Server racks near the grounded shuttles",
+          "Locker banks inside the customs hall"
+        ],
+        "notes": "Higher drop rate from ARC technician patrols.",
+        "sourceUrl": "https://arcraiders.wiki/"
+      },
+      {
+        "map": "The Blue Gate",
+        "area": "Signal Towers",
+        "spots": [
+          "Toolboxes at the base of uplink towers",
+          "Maintenance crates beside the antenna arrays"
+        ],
+        "sourceUrl": "https://arcraiders.wiki/"
+      }
+    ]
+  },
+  {
+    "id": "frozen-coolant",
+    "name": "Frozen Coolant Canister",
+    "type": "resource",
+    "rarity": "rare",
+    "description": "Cold Snap event material for weather-hardened builds.",
+    "locations": [
+      {
+        "map": "Stella Montis",
+        "area": "Ridgeline Research Outpost",
+        "spots": [
+          "Inside the lab fridges",
+          "Supply pallets beside snowcats"
+        ],
+        "notes": "Spawns more often during the Cold Snap map condition.",
+        "sourceUrl": "https://arcraiders.wiki/"
+      }
+    ]
+  },
+  {
+    "id": "encrypted-cache",
+    "name": "Encrypted Cache Data",
+    "type": "quest",
+    "rarity": "uncommon",
+    "description": "Data cubes for storyline hand-ins and intel projects.",
+    "locations": [
+      {
+        "map": "The Blue Gate",
+        "area": "Relay Nodes",
+        "spots": [
+          "On relay control desks",
+          "ARC uplink crates under tower stairs"
+        ],
+        "sourceUrl": "https://arcraiders.wiki/"
+      },
+      {
+        "map": "Dam Battlegrounds",
+        "area": "Pump House",
+        "spots": [
+          "Shelves above the turbine floor",
+          "Data cases near the control booth"
+        ],
+        "sourceUrl": "https://arcraiders.wiki/"
+      }
+    ]
+  },
+  {
+    "id": "servo-motor",
+    "name": "Recovered Servo Motor",
+    "type": "workbench",
+    "rarity": "uncommon",
+    "description": "Precision actuator for workbench stability upgrades.",
+    "locations": [
+      {
+        "map": "Buried City",
+        "area": "Collapsed Factory",
+        "spots": [
+          "Under fallen gantries",
+          "Locked tool chests near the assembly pit"
+        ],
+        "sourceUrl": "https://arcraiders.wiki/"
+      }
+    ]
+  }
+]
+

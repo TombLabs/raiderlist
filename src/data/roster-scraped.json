@@ -1,0 +1,52 @@
+[
+  {
+    "id": "celeste",
+    "name": "Celeste",
+    "role": "Trader",
+    "description": "Basic Materials; Topside Materials",
+    "requirements": [],
+    "perk": "Basic Materials",
+    "image": "https://arcraiders.wiki/w/images/thumb/0/00/Trader_Celeste.png/100px-Trader_Celeste.png.webp",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Celeste"
+  },
+  {
+    "id": "shani",
+    "name": "Shani",
+    "role": "Trader",
+    "description": "Raider Hatch Key; Binoculars",
+    "requirements": [],
+    "perk": "Raider Hatch Key",
+    "image": "https://arcraiders.wiki/w/images/thumb/0/06/Trader_Shani.png/100px-Trader_Shani.png.webp",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Shani"
+  },
+  {
+    "id": "tian-wen",
+    "name": "Tian Wen",
+    "role": "Trader",
+    "description": "Weapons; Ammo; Weapon Mods",
+    "requirements": [],
+    "perk": "Weapons",
+    "image": "https://arcraiders.wiki/w/images/thumb/2/20/Trader_Tian_Wen.png/100px-Trader_Tian_Wen.png.webp",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Tian%20Wen"
+  },
+  {
+    "id": "apollo",
+    "name": "Apollo",
+    "role": "Trader",
+    "description": "Gadgets; Grenades",
+    "requirements": [],
+    "perk": "Gadgets",
+    "image": "https://arcraiders.wiki/w/images/thumb/9/96/Trader_Apollo.png/100px-Trader_Apollo.png.webp",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Apollo"
+  },
+  {
+    "id": "lance",
+    "name": "Lance",
+    "role": "Trader",
+    "description": "Augments; Armor; Medical items",
+    "requirements": [],
+    "perk": "Augments",
+    "image": "https://arcraiders.wiki/w/images/thumb/4/49/Trader_Lance.png/100px-Trader_Lance.png.webp",
+    "sourceUrl": "https://arcraiders.wiki/wiki/Lance"
+  }
+]
