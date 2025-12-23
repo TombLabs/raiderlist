@@ -2,8 +2,8 @@
   {
     "id": "flickering-flames-1",
     "name": "Flickering Flames-1",
-    "description": "Community candleberry drive to prepare Speranza. Five contribution stages.",
-    "unlocks": "Event rewards and Snowglobe Charm on completion.",
+    "description": "Community candleberry drive to prepare Speranza.",
+    "unlocks": "Snowglobe Charm on completion",
     "sourceUrl": "https://arcraiders.wiki/wiki/Flickering_Flames-1",
     "stages": [
       {
@@ -67,7 +67,7 @@
     "id": "expedition-2",
     "name": "Expedition-2",
     "description": "Construct a caravan to send your Raider beyond the Rust Belt.",
-    "unlocks": "Permanent departure rewards and skill points for the next Raider.",
+    "unlocks": "Permanent departure rewards and skill points",
     "sourceUrl": "https://arcraiders.wiki/wiki/Expedition-2",
     "stages": [
       {
@@ -129,3 +129,4 @@
     ]
   }
 ]
+

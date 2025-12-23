@@ -1,10 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import questsScraped from "@/data/quests-scraped.json";
 import projectsManual from "@/data/projects.json";
-import workbenchScraped from "@/data/workbench-scraped.json";
+import workbenchManual from "@/data/workbench.json";
 import itemsScraped from "@/data/items-scraped.json";
-import Image from "next/image";
 import {
   Item,
   Project,
@@ -34,7 +34,7 @@ type CategoryDefinition<T extends SharedEntry> = {
 
 const questData = questsScraped as QuestRecord[];
 const projectData = projectsManual as Project[];
-const workbenchData = workbenchScraped as WorkbenchUpgrade[];
+const workbenchData = workbenchManual as WorkbenchUpgrade[];
 const itemData = itemsScraped as Item[];
 
 const categories: Array<
@@ -119,14 +119,7 @@ export default function Home() {
   const [filter, setFilter] = useState("");
   const [selectedItemId, setSelectedItemId] = useState<string | null>(null);
   const { getValue, increment, setValue, clear } = useProgress();
-  const {
-    items: checklist,
-    add: addToChecklist,
-    setHave,
-    incrementHave,
-    remove: removeChecklist,
-    clear: clearChecklist,
-  } = useChecklist();
+  const { items: checklist, add: addToChecklist, setHave, remove: removeChecklist, clear: clearChecklist } = useChecklist();
 
   const syncChecklistToProgress = (itemId: string, have: number) => {
     const entry = checklist[itemId];
@@ -157,8 +150,8 @@ export default function Home() {
     () => [
       { label: "Quests", value: questData.length },
       { label: "Projects", value: projectData.length },
-    { label: "Workbench upgrades", value: workbenchData.length },
-    { label: "Items", value: itemData.length },
+      { label: "Workbench upgrades", value: workbenchData.length },
+      { label: "Items", value: itemData.length },
     ],
     [],
   );
@@ -175,18 +168,12 @@ export default function Home() {
     const current = getValue(key);
     const isDone = current >= req.quantity;
     const remaining = Math.max(0, req.quantity - current);
-    const alreadyAdded = Boolean(
-      checklist[req.itemId]?.links?.some((link) => link.key === key),
-    );
+    const alreadyAdded = Boolean(checklist[req.itemId]?.links?.some((link) => link.key === key));
 
     return (
       <div key={key} className={styles.requirementRow} data-done={isDone}>
         <div className={styles.reqMain}>
-          <button
-            className={styles.itemLink}
-            type="button"
-            onClick={() => setSelectedItemId(item?.id ?? null)}
-          >
+          <button className={styles.itemLink} type="button" onClick={() => setSelectedItemId(item?.id ?? null)}>
             {item?.name ?? req.itemId}
           </button>
           <p className={styles.reqNote}>{item?.description}</p>
@@ -201,11 +188,7 @@ export default function Home() {
                 addToChecklist(req.itemId, item?.name ?? req.itemId, remaining, key, sourceLabel);
               }}
             >
-              {alreadyAdded
-                ? "Added to in-game list"
-                : remaining > 0
-                  ? `Add to in-game list (+${remaining})`
-                  : "Completed"}
+              {alreadyAdded ? "Added to in-game list" : remaining > 0 ? `Add to in-game list (+${remaining})` : "Completed"}
             </button>
           </div>
         </div>
@@ -214,11 +197,7 @@ export default function Home() {
             {current} / {req.quantity}
           </span>
           <div className={styles.stepper}>
-            <button
-              type="button"
-              onClick={() => increment(key, -1, req.quantity)}
-              aria-label="Decrease"
-            >
+            <button type="button" onClick={() => increment(key, -1, req.quantity)} aria-label="Decrease">
               −
             </button>
             <input
@@ -228,20 +207,12 @@ export default function Home() {
               value={current}
               onChange={(e) => setValue(key, Math.min(req.quantity, Math.max(0, Number(e.target.value))))}
             />
-            <button
-              type="button"
-              onClick={() => increment(key, 1, req.quantity)}
-              aria-label="Increase"
-            >
+            <button type="button" onClick={() => increment(key, 1, req.quantity)} aria-label="Increase">
               +
             </button>
           </div>
           <label className={styles.checkbox}>
-            <input
-              type="checkbox"
-              checked={isDone}
-              onChange={(e) => setValue(key, e.target.checked ? req.quantity : 0)}
-            />
+            <input type="checkbox" checked={isDone} onChange={(e) => setValue(key, e.target.checked ? req.quantity : 0)} />
             <span>Done</span>
           </label>
         </div>
@@ -365,10 +336,9 @@ export default function Home() {
       <header className={styles.hero}>
         <div>
           <p className={styles.kicker}>ARC Raiders companion</p>
-          <h1>Track quests, projects, workbench upgrades, and roster unlocks</h1>
+          <h1>Track quests, projects, and workbench upgrades</h1>
           <p className={styles.lead}>
-            Data stays on your device. All checklists and item counts are persisted locally in your browser so you can
-            prep runs without sending anything to a server.
+            Data stays on your device. Add items to the in-game checklist and keep track of what each item is for.
           </p>
         </div>
         <div className={styles.heroActions}>
@@ -395,7 +365,9 @@ export default function Home() {
           <div>
             <p className={styles.cardEyebrow}>In-game checklist</p>
             <h2>Gather list</h2>
-            <p className={styles.cardDescription}>Add items from any quest/project/workbench requirement and track them here while you play.</p>
+            <p className={styles.cardDescription}>
+              Add items from any quest/project/workbench requirement and track them here while you play. Sources are shown below each item.
+            </p>
           </div>
           <button className={styles.secondary} type="button" onClick={() => clearChecklist()}>
             Clear list
@@ -414,15 +386,17 @@ export default function Home() {
                     .filter((s): s is string => Boolean(s)),
                 ),
               );
+              const showSources = sources.length ? sources : ci.links.length ? ["Unknown source"] : [];
               return (
                 <div key={ci.itemId} className={styles.checklistCard}>
                   <div className={styles.checklistTop}>
                     <div>
                       <p className={styles.cardEyebrow}>Item</p>
                       <h4>{ci.name}</h4>
-                      {sources.length ? (
+                      {showSources.length ? (
                         <div className={styles.metaRow}>
-                          {sources.map((src) => (
+                          <span className={styles.chipLabel}>Sources:</span>
+                          {showSources.map((src) => (
                             <span key={src} className={styles.chip}>
                               {src}
                             </span>
@@ -467,8 +441,8 @@ export default function Home() {
                       <button
                         type="button"
                         onClick={() => {
-                          incrementHave(ci.itemId, 1);
                           const next = Math.min(ci.total, ci.have + 1);
+                          setHave(ci.itemId, next);
                           syncChecklistToProgress(ci.itemId, next);
                         }}
                         aria-label="Increase"

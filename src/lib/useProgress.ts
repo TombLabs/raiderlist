@@ -1,9 +1,20 @@
 import { useState } from "react";
 import { ProgressCategory } from "@/types/data";
 
+export type ProgressMap = Record<string, number>;
+
 const STORAGE_KEY = "arcraiders-progress-v1";
 
-export type ProgressMap = Record<string, number>;
+const readInitial = (): ProgressMap => {
+  if (typeof window === "undefined") return {};
+  const saved = window.localStorage.getItem(STORAGE_KEY);
+  if (!saved) return {};
+  try {
+    return JSON.parse(saved) as ProgressMap;
+  } catch {
+    return {};
+  }
+};
 
 export const makeProgressKey = (
   category: ProgressCategory,
@@ -12,21 +23,8 @@ export const makeProgressKey = (
   itemId: string,
 ) => `${category}|${entityId}|${stageId}|${itemId}`;
 
-const readInitialState = (): ProgressMap => {
-  if (typeof window === "undefined") return {};
-  const saved = window.localStorage.getItem(STORAGE_KEY);
-  if (saved) {
-    try {
-      return JSON.parse(saved);
-    } catch (error) {
-      console.warn("Could not parse saved progress", error);
-    }
-  }
-  return {};
-};
-
 export function useProgress() {
-  const [progress, setProgress] = useState<ProgressMap>(readInitialState);
+  const [progress, setProgress] = useState<ProgressMap>(readInitial);
 
   const persist = (next: ProgressMap) => {
     setProgress(next);
@@ -36,8 +34,7 @@ export function useProgress() {
   };
 
   const setValue = (key: string, value: number) => {
-    const clamped = Math.max(0, value);
-    persist({ ...progress, [key]: clamped });
+    persist({ ...progress, [key]: Math.max(0, value) });
   };
 
   const increment = (key: string, delta: number, max?: number) => {
@@ -48,12 +45,6 @@ export function useProgress() {
 
   const clear = () => persist({});
 
-  return {
-    progress,
-    setValue,
-    increment,
-    clear,
-    getValue: (key: string) => progress[key] ?? 0,
-  };
+  return { progress, getValue: (key: string) => progress[key] ?? 0, setValue, increment, clear };
 }
 

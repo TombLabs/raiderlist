@@ -5,6 +5,9 @@
   display: flex;
   flex-direction: column;
   gap: 28px;
+  color: #e8f0ff;
+  background: radial-gradient(circle at 10% 20%, rgba(20, 56, 102, 0.2), transparent 30%),
+    radial-gradient(circle at 90% 10%, rgba(91, 198, 255, 0.1), transparent 25%), #050914;
 }
 
 .hero {
@@ -46,8 +49,7 @@
 .primary,
 .secondary,
 .tab,
-.tabActive,
-.itemButton {
+.tabActive {
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   background: rgba(255, 255, 255, 0.04);
@@ -70,8 +72,7 @@
 }
 
 .primary:hover,
-.tabActive,
-.itemButton:hover {
+.tabActive {
   transform: translateY(-1px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
@@ -176,19 +177,19 @@
   font-size: 12px;
 }
 
+.chipLabel {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 12px;
+  color: #9fb1c8;
+}
+
 .stages {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-.emptyStage {
-  padding: 10px 12px;
-  border: 1px dashed rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  color: #9fb1c8;
-  font-size: 14px;
-  background: rgba(255, 255, 255, 0.03);
 }
 
 .stage {
@@ -352,6 +353,74 @@
   font-size: 14px;
 }
 
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.statCard {
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.statValue {
+  display: block;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.checklistPanel {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 18px;
+  background: rgba(7, 12, 24, 0.7);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.checklistHead {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.checklistGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 14px;
+}
+
+.checklistCard {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checklistTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.emptyStage {
+  padding: 10px 12px;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  color: #9fb1c8;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
 .drawer {
   position: fixed;
   inset: 0;
@@ -419,65 +488,6 @@
   display: inline-block;
   margin-top: 6px;
   color: #7be4d3;
-}
-
-.stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 12px;
-}
-
-.statCard {
-  padding: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.03);
-}
-
-.statValue {
-  display: block;
-  font-size: 24px;
-  font-weight: 800;
-  margin-bottom: 4px;
-}
-
-.checklistPanel {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  padding: 18px;
-  background: rgba(7, 12, 24, 0.7);
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.checklistHead {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  align-items: center;
-}
-
-.checklistGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 14px;
-}
-
-.checklistCard {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 14px;
-  background: rgba(255, 255, 255, 0.03);
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.checklistTop {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 @media (max-width: 720px) {
