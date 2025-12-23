@@ -407,7 +407,13 @@ export default function Home() {
           ) : (
             Object.values(checklist).map((ci) => {
               const pct = ci.total > 0 ? Math.min(100, Math.round((ci.have / ci.total) * 100)) : 0;
-              const sources = Array.from(new Set((ci.links ?? []).map((l) => l.source).filter(Boolean)));
+              const sources = Array.from(
+                new Set(
+                  (ci.links ?? [])
+                    .map((l) => l.source)
+                    .filter((s): s is string => Boolean(s)),
+                ),
+              );
               return (
                 <div key={ci.itemId} className={styles.checklistCard}>
                   <div className={styles.checklistTop}>
