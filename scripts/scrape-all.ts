@@ -177,7 +177,9 @@ async function scrapeLoot() {
     });
   });
 
-  const thumbs = await Promise.all(items.map((i) => fetchThumb(i._title)));
+  const thumbs = await Promise.all(
+    items.map((i) => fetchThumb(i._title ?? i.name)),
+  );
   const byTitle = new Map(thumbs.map((t) => [t.title.toLowerCase(), t.image]));
   const withImages = items.map(({ _title, ...rest }) => ({
     ...rest,
