@@ -181,10 +181,13 @@ async function scrapeLoot() {
     items.map((i) => fetchThumb(i._title ?? i.name)),
   );
   const byTitle = new Map(thumbs.map((t) => [t.title.toLowerCase(), t.image]));
-  const withImages = items.map(({ _title, ...rest }) => ({
-    ...rest,
-    image: byTitle.get(_title.toLowerCase()),
-  }));
+  const withImages = items.map(({ _title, ...rest }) => {
+    const title = _title ?? rest.name;
+    return {
+      ...rest,
+      image: byTitle.get(title.toLowerCase()),
+    };
+  });
 
   const outPath = resolve(process.cwd(), "src/data/items-scraped.json");
   writeFileSync(outPath, JSON.stringify(withImages, null, 2), "utf8");
